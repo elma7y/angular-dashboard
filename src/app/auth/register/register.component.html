@@ -1,0 +1,90 @@
+<div class="register d-flex justify-content-center align-items-center">
+  <mat-card class="myform">
+    <mat-card-header
+      class="head d-flex justify-content-center mb-4 text-capitalize mt-3 align-items-center"
+    >
+      <mat-card-title class="fs-4 fw-bold">register</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="body">
+      <!-- reg-form -->
+      <form class="d-flex flex-column" [formGroup]="reg">
+        <!-- username field -->
+        <mat-form-field class="username" color="accent" appearance="outline">
+          <mat-label>username</mat-label>
+          <input matInput formControlName="username" />
+        </mat-form-field>
+        <!-- password field -->
+        <mat-form-field class="password" color="accent" appearance="outline">
+          <mat-label>Enter your password</mat-label>
+          <input
+            matInput
+            [type]="hide ? 'password' : 'text'"
+            formControlName="password"
+          />
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="hide = !hide"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide"
+          >
+            <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+          </button>
+        </mat-form-field>
+        <!-- email field -->
+        <mat-form-field class="email" color="accent" appearance="outline">
+          <mat-label>Enter your email</mat-label>
+          <input
+            formControlName="email"
+            matInput
+            placeholder="hello@example.com"
+            required
+          />
+          <mat-error *ngIf="reg.controls['email']">{{
+            getErrorMessage()
+          }}</mat-error>
+        </mat-form-field>
+        <div
+          class="errorsmsg d-flex flex-column text-capitalize fs-6 mb-4 mt-3"
+        >
+          <span [ngClass]="userstyle" class="usererror mb-1">{{
+            usererror
+          }}</span>
+          <span [ngClass]="passstyle" class="passerror mb-1">{{
+            passerror
+          }}</span>
+          <span [ngClass]="emailstyle" class="emailerror mb-1">{{
+            emailerror
+          }}</span>
+        </div>
+        <!-- register button -->
+        <mat-card-actions>
+          <button
+            (click)="register()"
+            class="registerbtn"
+            [disabled]="!reg.valid"
+            type="submit"
+            mat-raised-button
+            color="accent"
+          >
+            register
+          </button>
+        </mat-card-actions>
+      </form>
+    </mat-card-content>
+    <mat-card-actions
+      class="foot d-flex flex-column justify-content-center mb-3 fs-4 text-capitalize align-items-center"
+    >
+      already registered
+      <button
+        class="signin fs-5 mt-3"
+        routerLink="/signin"
+        mat-raised-button
+        color="warn"
+      >
+        sign in
+      </button>
+    </mat-card-actions>
+    <mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
+  </mat-card>
+</div>

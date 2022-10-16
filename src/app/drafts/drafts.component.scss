@@ -1,0 +1,46 @@
+.title {
+  margin: 20px 60px;
+  h2 {
+    position: relative;
+    color: black;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  h2:before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 38px;
+    height: 3px;
+    bottom: -15px;
+  }
+}
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.drafts {
+  background-color: #303030;
+  .heading {
+    background-color: #555;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .head {
+    background-color: #555;
+    padding: 20px;
+    h2 {
+    }
+    p {
+    }
+  }
+}
+.nodrafts {
+  height: 700px;
+  color: chocolate;
+  h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+}

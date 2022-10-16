@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="title">
+    <h2>drafts</h2>
+  </div>
+</div>
+<div *ngIf="title[0]" class="container drafts mt-5">
+  <div class="d-flex justify-content-between align-items-center heading">
+    <div>
+      <h2 class="text-capitalize text-center">title</h2>
+    </div>
+    <div>
+      <h2 class="text-capitalize text-center">yourThoughts</h2>
+    </div>
+  </div>
+  <div class="head d-flex justify-content-between align-items-center w-100">
+    <div class="d-flex flex-column gap-5">
+      <h2 class="text-left" *ngFor="let mytitle of title; let i = index">
+        {{ mytitle }}
+      </h2>
+    </div>
+    <hr />
+    <div class="d-flex flex-column w-50">
+      <p
+        class="text-center mb-4 fs-5"
+        *ngFor="let mythoughts of thoughts; let i = index"
+      >
+        {{ mythoughts }}
+      </p>
+    </div>
+  </div>
+</div>
+<div
+  *ngIf="!title[0]"
+  class="nodrafts d-flex justify-content-center align-items-center container"
+>
+  <h2>you have no drafts yet</h2>
+</div>

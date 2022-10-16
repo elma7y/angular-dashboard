@@ -1,0 +1,350 @@
+<div class="container-fluid mb-5">
+  <div class="title">
+    <h2>plans</h2>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="plans">
+    <div class="row ms-4 me-4 gap-3 justify-content-center mb-5">
+      <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="plan">
+          <div
+            class="head d-flex justify-content-center align-items-center flex-column mb-3 freed"
+          >
+            <p class="text-capitalize fs-4 fw-bold mb-4">free</p>
+            <h2 class="fs-2"><sup>$</sup>0.00</h2>
+          </div>
+          <div class="body free">
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">access all text lessons</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">access all video lessons</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">appear on leaderboard</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-x fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Browse Content Without Ads</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-x fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Access All Assignments</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-x fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Get Daily Prizes</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-x fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Earn Certificate</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-x fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">
+                  1 GB Space For Hosting Files
+                </h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-x fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Access Badge System</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+          </div>
+          <div *ngIf="!joinFree" class="foot">
+            <button
+              style="background-color: var(--bs-orange)"
+              (click)="joinedFree()"
+              mat-raised-button
+              color="accent"
+            >
+              join
+            </button>
+          </div>
+          <div
+            *ngIf="joinFree"
+            class="footyy d-flex justify-content-center align-items-center"
+          >
+            <h4 class="text-white-50 text-capitalize fs-6 current">
+              this is your current plan
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="plan">
+          <div
+            class="head d-flex justify-content-center align-items-center flex-column mb-3 basics"
+          >
+            <p class="text-capitalize fs-4 fw-bold mb-4">basic</p>
+            <h2 class="fs-2"><sup>$</sup>7.99</h2>
+          </div>
+          <div class="body basic">
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">access all text lessons</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">access all video lessons</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">appear on leaderboard</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Browse Content Without Ads</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Access All Assignments</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Get Daily Prizes</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Earn Certificate</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-x fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">
+                  1 GB Space For Hosting Files
+                </h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-x fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Access Badge System</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+          </div>
+          <div *ngIf="!joinBasic" class="foot">
+            <button
+              style="background-color: var(--bs-orange)"
+              (click)="joinedBasic()"
+              mat-raised-button
+              color="primary"
+            >
+              join
+            </button>
+          </div>
+          <div
+            *ngIf="joinBasic"
+            class="footyy d-flex justify-content-center align-items-center"
+          >
+            <h4 class="text-white-50 text-capitalize fs-6 current">
+              this is your current plan
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="plan">
+          <div
+            class="head d-flex justify-content-center align-items-center flex-column mb-3 premi"
+          >
+            <p class="text-capitalize fs-4 fw-bold mb-4">premium</p>
+            <h2 class="fs-2"><sup>$</sup>19.99</h2>
+          </div>
+          <div class="body prem">
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">access all text lessons</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">access all video lessons</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">appear on leaderboard</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Browse Content Without Ads</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Access All Assignments</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Get Daily Prizes</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Earn Certificate</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">
+                  1 GB Space For Hosting Files
+                </h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+            <div
+              class="box d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="cont d-flex align-items-center">
+                <i class="bi bi-check fs-3 me-2"></i>
+                <h3 class="text-capitalize m-0">Access Badge System</h3>
+              </div>
+              <i class="bi bi-info-circle-fill text-white-50"></i>
+            </div>
+          </div>
+          <div *ngIf="!joinPremium" class="foot">
+            <button
+              style="background-color: var(--bs-orange)"
+              (click)="joinedPremium()"
+              mat-raised-button
+              color="primary"
+            >
+              join
+            </button>
+          </div>
+          <div
+            *ngIf="joinPremium"
+            class="foot d-flex justify-content-center align-items-center"
+          >
+            <h4 class="text-white-50 text-capitalize fs-6 current">
+              this is your current plan
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

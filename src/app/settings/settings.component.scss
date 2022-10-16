@@ -1,0 +1,283 @@
+.title {
+  margin: 20px 60px;
+  h2 {
+    position: relative;
+    color: black;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  h2:before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 38px;
+    height: 3px;
+    bottom: -15px;
+  }
+}
+.settings {
+  margin: 50px 20px;
+  .row {
+    margin-bottom: 25px;
+    .site-control {
+      transition: 0.5s;
+      box-shadow: 0 0 10px rgb(126, 94, 13);
+      max-width: 500px;
+      background-color: #303030;
+      border-radius: 8px;
+      .head {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .body {
+        padding: 15px 20px;
+      }
+      .foot {
+        padding: 15px 20px;
+        .mat-form-field {
+          width: 100%;
+        }
+        .textarea {
+          width: 100%;
+          background-color: #555;
+          height: 150px;
+          max-height: 150px;
+        }
+      }
+    }
+    .general-info {
+      transition: 0.5s;
+      box-shadow: 0 0 10px rgb(126, 94, 13);
+      max-width: 500px;
+      background-color: #303030;
+      border-radius: 8px;
+      .head {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .body {
+        padding: 15px 20px;
+        .emailfield {
+          width: 100%;
+        }
+        button {
+          transition: 0.5s;
+        }
+        button:hover {
+          color: black !important;
+        }
+      }
+    }
+    .security-info {
+      transition: 0.5s;
+      box-shadow: 0 0 10px rgb(126, 94, 13);
+      max-width: 500px;
+      background-color: #303030;
+      border-radius: 8px;
+      .head {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .body {
+        padding: 15px 20px;
+        button {
+          transition: 0.5s;
+        }
+        button:hover {
+          color: black !important;
+        }
+      }
+
+      .end {
+        padding: 15px 20px;
+        button {
+          transition: 0.5s;
+        }
+        button:hover {
+          color: black !important;
+        }
+      }
+    }
+    .site-control:hover {
+      box-shadow: 0 0 30px rgb(126, 94, 13);
+      box-shadow: 0 0 30px rgb(248, 178, 1);
+    }
+    .general-info:hover {
+      box-shadow: 0 0 30px rgb(126, 94, 13);
+      box-shadow: 0 0 30px rgb(248, 178, 1);
+    }
+    .security-info:hover {
+      box-shadow: 0 0 30px rgb(126, 94, 13);
+      box-shadow: 0 0 30px rgb(248, 178, 1);
+    }
+  }
+  .row {
+    margin-bottom: 25px;
+    .social-info {
+      transition: 0.5s;
+      box-shadow: 0 0 10px rgb(126, 94, 13);
+      max-width: 500px;
+      background-color: #303030;
+      border-radius: 8px;
+      .head {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .body {
+        padding: 15px 20px;
+        .box {
+          border: 1px solid white;
+          border-radius: 7px;
+          i {
+            border-right: 1px solid white;
+          }
+          input {
+            color: white;
+            background-color: #555;
+            padding: 5px 10px;
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+            height: 37px;
+            outline: none;
+            width: 100%;
+          }
+          .bi-twitter {
+            transition: 0.5s;
+          }
+          .bi-twitter:hover {
+            color: #1da1f2 !important;
+          }
+          .bi-facebook {
+            transition: 0.5s;
+          }
+          .bi-facebook:hover {
+            color: #1877f2 !important;
+          }
+          .bi-youtube {
+            transition: 0.5s;
+          }
+          .bi-youtube:hover {
+            color: #ff0000 !important;
+          }
+          .bi-linkedin {
+            transition: 0.5s;
+          }
+          .bi-linkedin:hover {
+            color: #0077b5 !important;
+          }
+        }
+      }
+    }
+    .widgets-control {
+      transition: 0.5s;
+      box-shadow: 0 0 10px rgb(126, 94, 13);
+      max-width: 500px;
+      background-color: #303030;
+      border-radius: 8px;
+      .head {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .body {
+        padding: 15px 20px;
+        .quick,
+        .yearly,
+        .tickets,
+        .latestnews,
+        .latesttasks,
+        .topsearch {
+          transition: 0.5s;
+        }
+        .quick:hover,
+        .yearly:hover,
+        .tickets:hover,
+        .latestnews:hover,
+        .latesttasks:hover,
+        .topsearch:hover {
+          background-color: #d3d3d3;
+          color: black;
+          padding: 10px;
+          border-radius: 7px;
+        }
+      }
+    }
+    .backup-manager {
+      transition: 0.5s;
+      box-shadow: 0 0 10px rgb(126, 94, 13);
+      max-width: 500px;
+      background-color: #303030;
+      border-radius: 8px;
+      .head {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .body {
+        padding: 15px 20px;
+        .radio {
+          transition: 0.5s;
+        }
+        .radio:hover {
+          background-color: #d3d3d3;
+          padding: 10px;
+          border-radius: 7px;
+          color: black;
+        }
+      }
+      .foot {
+        .box {
+          transition: 0.5s;
+          cursor: pointer;
+          width: 100px;
+          height: 100px;
+        }
+        .megabox,
+        .junkbox,
+        .bubblebox {
+          transition: 0.5s;
+        }
+        .megabox:hover,
+        .junkbox:hover,
+        .bubblebox:hover {
+          background-color: #d3d3d3;
+          color: black;
+          border-radius: 7px;
+        }
+        .active {
+          border: 1px solid #f44336;
+          color: #f44336;
+        }
+      }
+    }
+    .social-info:hover {
+      box-shadow: 0 0 30px rgb(126, 94, 13);
+      box-shadow: 0 0 30px rgb(248, 178, 1);
+    }
+    .widgets-control:hover {
+      box-shadow: 0 0 30px rgb(126, 94, 13);
+      box-shadow: 0 0 30px rgb(248, 178, 1);
+    }
+    .backup-manager:hover {
+      box-shadow: 0 0 30px rgb(126, 94, 13);
+      box-shadow: 0 0 30px rgb(248, 178, 1);
+    }
+  }
+}

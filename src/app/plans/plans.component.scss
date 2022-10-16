@@ -1,0 +1,153 @@
+.title {
+  margin: 20px 60px;
+  h2 {
+    position: relative;
+    color: black;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  h2:before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 38px;
+    height: 3px;
+    bottom: -15px;
+  }
+}
+.plans {
+  .row {
+    .plan {
+      transition: 0.5s;
+      box-shadow: 0px 0px 10px rgb(126, 94, 13);
+      border-radius: 7px;
+      height: 100%;
+      background-color: #303030;
+      .head {
+        transition: 0.5s;
+      }
+      .body {
+        .box {
+          transition: 0.5s;
+        }
+      }
+      .bi-check {
+        transition: 0.5s;
+      }
+      .bi-x {
+        transition: 0.5s;
+      }
+      .bi-info-circle-fill {
+        transition: 0.5s;
+      }
+      .current {
+        transition: 0.5s;
+      }
+      .freed {
+        background-color: #22c55e;
+        height: 150px;
+        padding: 10px 15px;
+        border: 3px solid white;
+        outline: 3px solid #22c55e;
+      }
+      .free {
+        padding: 10px 15px;
+        .box {
+          .cont {
+            .bi-check {
+              color: #22c55e;
+            }
+            .bi-x {
+              color: red;
+            }
+          }
+        }
+      }
+      .basics {
+        background-color: #0075ff;
+        height: 150px;
+        padding: 10px 15px;
+        border: 3px solid white;
+        outline: 3px solid #0075ff;
+      }
+      .basic {
+        padding: 10px 15px;
+        .box {
+          .cont {
+            .bi-check {
+              color: #22c55e;
+            }
+            .bi-x {
+              color: red;
+            }
+          }
+        }
+      }
+      .premi {
+        background-color: #f59e0b;
+        height: 150px;
+        padding: 10px 15px;
+        border: 3px solid white;
+        outline: 3px solid #f59e0b;
+      }
+      .prem {
+        padding: 10px 15px;
+        .box {
+          .cont {
+            .bi-check {
+              color: #22c55e;
+            }
+          }
+        }
+      }
+      .foot {
+        padding: 10px 15px;
+        button {
+          transition: 0.5s;
+          color: white;
+          height: 35px;
+        }
+        button:hover {
+          color: black !important;
+        }
+      }
+    }
+    .plan:hover {
+      box-shadow: 0 0 30px rgb(126, 94, 13);
+      box-shadow: 0 0 30px rgb(248, 178, 1);
+      .head {
+        background-color: #d3d3d3;
+        color: black;
+        font-weight: bold;
+      }
+      .body {
+        .box {
+          background-color: #d3d3d3;
+          color: black !important;
+          padding: 10px;
+          border-radius: 7px;
+          font-weight: bold;
+          .cont {
+            .bi-check {
+              box-shadow: 0 0 5px #22c55e;
+            }
+            .bi-x {
+              box-shadow: 0 0 5px red;
+            }
+          }
+          .bi-info-circle-fill {
+            color: black !important;
+          }
+        }
+      }
+      .current {
+        background-color: #d3d3d3;
+        color: black !important;
+        padding: 10px;
+        border-radius: 7px;
+        font-weight: 900;
+      }
+    }
+  }
+}

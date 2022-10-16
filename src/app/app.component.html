@@ -1,0 +1,25 @@
+<div class="main" *ngIf="ishome">
+  <div class="row">
+    <mat-drawer-container autosize>
+      <mat-drawer-content>
+        <app-header
+          class="header"
+          (toggledata)="toggleincome($event)"
+        ></app-header>
+        <div class="main-content">
+          <router-outlet></router-outlet>
+        </div>
+      </mat-drawer-content>
+      <mat-drawer
+        [style]="showclass"
+        class="d-none d-lg-block d-sm-block d-md-block"
+        [mode]="mode"
+        [opened]="showclass"
+        ><app-sidebar></app-sidebar
+      ></mat-drawer>
+    </mat-drawer-container>
+  </div>
+</div>
+<ng-container *ngIf="!ishome">
+  <router-outlet></router-outlet>
+</ng-container>

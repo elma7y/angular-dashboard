@@ -1,0 +1,121 @@
+.title {
+  margin: 20px 60px;
+  h2 {
+    position: relative;
+    color: black;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  h2:before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 38px;
+    height: 3px;
+    bottom: -15px;
+  }
+}
+.friends {
+  .row {
+    margin: 0 auto;
+    .my-friends {
+      transition: 0.5s;
+      box-shadow: 0px 0px 10px rgb(126, 94, 13);
+      border-radius: 7px;
+      height: 100%;
+      background-color: #303030;
+      .head {
+        padding: 15px 20px;
+        .pi {
+          i {
+            transition: 0.5s;
+            background-color: #555;
+            cursor: pointer;
+            border-radius: 50%;
+          }
+        }
+        .content {
+          img {
+            transition: 0.5s;
+            width: 95px;
+            border-radius: 50%;
+          }
+        }
+      }
+      .body {
+        padding: 0px 20px 15px;
+        position: relative;
+        .vip {
+          transition: 0.5s;
+          color: rgb(184 134 11 / 80%);
+          right: 10px;
+          top: calc(50% - 20px);
+          position: absolute;
+          font-size: 40px;
+        }
+        .box {
+          transition: 0.5s;
+        }
+      }
+      .foot {
+        padding: 15px 20px;
+        .buttons {
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .date {
+          span {
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+    .my-friends:hover {
+      box-shadow: 0 0 30px rgb(126, 94, 13);
+      box-shadow: 0 0 30px rgb(248, 178, 1);
+      .head {
+        .pi {
+          i {
+            background-color: #d3d3d3;
+            color: black !important;
+          }
+        }
+        .content {
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+      .body {
+        .box {
+          background-color: #d3d3d3;
+          color: black !important;
+          padding: 5px;
+          border-radius: 7px;
+          font-weight: bold;
+        }
+        .vip {
+          font-weight: bold;
+          color: black;
+        }
+      }
+      .foot {
+        .date {
+          span {
+            background-color: #d3d3d3;
+            padding: 5px;
+            border-radius: 7px;
+            color: black !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

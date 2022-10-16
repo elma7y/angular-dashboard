@@ -1,0 +1,241 @@
+.title {
+  margin: 20px 60px;
+  h2 {
+    position: relative;
+    color: black;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  h2:before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 38px;
+    height: 3px;
+    bottom: -15px;
+  }
+}
+.files {
+  .father-row {
+    .files-col {
+      .son-row {
+        .file {
+          transition: 0.5s;
+          box-shadow: 0px 0px 10px rgb(126, 94, 13);
+          border-radius: 7px;
+          height: 100%;
+          background-color: #303030;
+          .head {
+            padding: 10px 15px;
+            i {
+              transition: 0.5s;
+            }
+          }
+          .body {
+            padding: 10px 15px;
+            img {
+              transition: 0.5s;
+              width: 80px;
+            }
+          }
+          .user {
+            padding: 10px 15px;
+            h5 {
+              transition: 0.5s;
+            }
+          }
+          .foot {
+            padding: 10px 15px;
+            .date {
+              transition: 0.5s;
+            }
+            .size {
+              transition: 0.5s;
+            }
+          }
+        }
+        .file:hover {
+          box-shadow: 0 0 30px rgb(126, 94, 13);
+          box-shadow: 0 0 30px rgb(248, 178, 1);
+          .head {
+            i {
+              padding: 5px;
+              background-color: #d3d3d3;
+              color: black !important;
+              font-weight: bold;
+              border-radius: 50%;
+            }
+          }
+          .body {
+            img {
+              filter: grayscale(100%);
+            }
+          }
+          .user {
+            h5 {
+              text-align: center;
+              background-color: #d3d3d3;
+              padding: 5px;
+              color: black !important;
+              border-radius: 7px;
+              font-weight: bold;
+            }
+          }
+          .foot {
+            .date {
+              background-color: #d3d3d3;
+              color: black !important;
+              font-weight: bold;
+              padding: 5px;
+              border-radius: 7px;
+            }
+            .size {
+              background-color: #d3d3d3;
+              color: black !important;
+              font-weight: bold;
+              padding: 5px;
+              border-radius: 7px;
+            }
+          }
+        }
+      }
+    }
+    .stat-col {
+      .stat {
+        margin-bottom: 12px;
+        transition: 0.5s;
+        box-shadow: 0px 0px 10px rgb(126, 94, 13);
+        border-radius: 7px;
+        background-color: #303030;
+        .head {
+          padding: 10px 15px;
+        }
+        .body {
+          padding: 10px 15px;
+          .box {
+            transition: 0.5s;
+            .pdf {
+              background-color: rgb(0 117 255 / 20%);
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              i {
+                color: #0075ff;
+              }
+            }
+            .images {
+              background-color: rgb(34 197 94 / 20%);
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              i {
+                color: #22c55e;
+              }
+            }
+            .word {
+              background-color: rgb(244 67 54 / 20%);
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              i {
+                color: #f44336;
+              }
+            }
+            .csv {
+              background-color: rgb(245 158 11 / 20%);
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              i {
+                color: #f59e0b;
+              }
+            }
+            .content {
+              h5 {
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+        .foot {
+          padding: 10px 15px;
+          button {
+            color: white;
+          }
+        }
+      }
+
+      .stat:hover {
+        margin-bottom: 12px;
+        box-shadow: 0 0 30px rgb(126, 94, 13);
+        box-shadow: 0 0 30px rgb(248, 178, 1);
+        .body {
+          .box {
+            background-color: #d3d3d3;
+            padding: 10px;
+            border-radius: 7px;
+            color: black !important;
+            font-weight: bold;
+            .pdf {
+              transform: scale(1.4);
+              margin-bottom: 0px !important;
+              background-color: #003776;
+              i {
+                transform: scale(1.4);
+                font-weight: bold;
+              }
+            }
+            .images {
+              transform: scale(1.4);
+              margin-bottom: 0px !important;
+              background-color: #085424;
+              i {
+                transform: scale(1.4);
+                font-weight: bold;
+              }
+            }
+            .csv {
+              transform: scale(1.4);
+              margin-bottom: 0px !important;
+              background-color: #8a5700fc;
+              i {
+                transform: scale(1.4);
+                font-weight: bold;
+              }
+            }
+            .word {
+              transform: scale(1.4);
+              margin-bottom: 0px !important;
+              background-color: #8f150c;
+              i {
+                transform: scale(1.4);
+                font-weight: bold;
+              }
+            }
+            .content {
+              margin-top: 10px;
+              h5 {
+                font-weight: bold;
+                color: black !important;
+              }
+            }
+          }
+        }
+        .foot {
+          button {
+            color: black !important;
+          }
+        }
+      }
+    }
+  }
+}

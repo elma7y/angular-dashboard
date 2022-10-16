@@ -1,0 +1,95 @@
+.title {
+  margin: 20px 60px;
+  h2 {
+    position: relative;
+    color: black;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  h2:before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 38px;
+    height: 3px;
+    bottom: -15px;
+  }
+}
+
+.courses {
+  .row {
+    margin: 0 auto;
+    .box {
+      transition: 0.5s;
+      box-shadow: 0px 0px 10px rgb(126, 94, 13);
+      border-radius: 7px;
+      height: 100%;
+      background-color: #555;
+      .head {
+        position: relative;
+        .team {
+          transition: 0.5s;
+          position: absolute;
+          width: 50px;
+          border-radius: 50%;
+          top: 20px;
+          left: 20px;
+          z-index: 1;
+        }
+        .back {
+          transition: 0.5s;
+          border-top-left-radius: 7px;
+          border-top-right-radius: 7px;
+          width: -webkit-fill-available;
+        }
+      }
+      .body {
+        padding: 15px 20px;
+        .button {
+          button {
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+    .foot {
+      padding: 15px 20px;
+      .spans {
+        transition: 0.5s;
+      }
+      i {
+        transition: 0.5s;
+      }
+    }
+    .box:hover {
+      box-shadow: 0 0 30px rgb(126, 94, 13);
+      box-shadow: 0 0 30px rgb(248, 178, 1);
+      .head {
+        .team {
+          transform: scale(1.3);
+        }
+        .back {
+          filter: grayscale(100%);
+        }
+      }
+      .body {
+        .button {
+          button {
+            color: black !important;
+          }
+        }
+      }
+      .foot {
+        .spans,
+        i {
+          background-color: #d3d3d3;
+          color: black !important;
+          padding: 5px;
+          font-weight: bold;
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+}

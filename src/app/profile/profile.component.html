@@ -1,0 +1,344 @@
+<div class="container-fluid">
+  <div class="title">
+    <h2>profile</h2>
+  </div>
+</div>
+<div class="profile">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-2 col-md-2 col-sm-12 pic-sec">
+        <div class="box d-flex flex-column justify-content-center">
+          <img
+            class="img-fluid text-center mt-5 mb-3"
+            src="assets/images/avatar.png"
+            alt=""
+          />
+          <p class="text-center fs-6 text-capitalize">{{ usernameprofile }}</p>
+          <span class="text-center text-white-50 text-capitalize"
+            >level 50</span
+          >
+          <mat-progress-bar
+            style="width: 80%; margin: 30px auto"
+            mode="determinate"
+            value="80"
+            color="accent"
+          ></mat-progress-bar>
+          <ul class="d-flex justify-content-center p-0">
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+          </ul>
+          <span class="text-white-50 text-center text-capitalize mb-5"
+            >1000 raiting</span
+          >
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-10 col-sm-12 pic-talk">
+        <h4
+          class="text-white-50 text-capitalize text-center text-lg-start text-md-start text-sm-center"
+        >
+          general information
+        </h4>
+        <div
+          class="box d-flex mt-4 mb-3 flex-wrap flex-wrap justify-content-lg-between justify-content-md-between justify-content-center me-lg-5 me-md-5 me-sm-5 me-0 flex-md-row flex-lg-row flex-column text-center"
+        >
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize">full name: </span>
+            {{ usernameprofile }}
+          </p>
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize">gender:</span> male
+          </p>
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize">country</span> egypt
+          </p>
+          <mat-slide-toggle
+            aria-label="hide"
+            class="justify-content-center"
+            style="display: flex; justify-content: center"
+          ></mat-slide-toggle>
+        </div>
+        <h4
+          class="text-white-50 text-capitalize text-center text-lg-start text-md-start text-sm-center"
+        >
+          personal information
+        </h4>
+        <div
+          class="box d-flex mt-4 mb-3 flex-wrap flex-wrap justify-content-lg-between justify-content-md-between justify-content-center me-lg-5 me-md-5 me-sm-5 me-0 flex-md-row flex-lg-row flex-column text-center"
+        >
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize">email: </span
+            >{{ emailprofile }}
+          </p>
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize">phone: </span>
+            01287503160
+          </p>
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize">date of birth: </span>
+            25/5/1996
+          </p>
+          <mat-slide-toggle></mat-slide-toggle>
+        </div>
+        <h4
+          class="text-white-50 text-capitalize text-center text-lg-start text-md-start text-sm-center"
+        >
+          job information
+        </h4>
+        <div
+          class="box d-flex mt-4 mb-3 flex-wrap flex-wrap justify-content-lg-between justify-content-md-between justify-content-center me-lg-5 me-md-5 me-sm-5 me-0 flex-md-row flex-lg-row flex-column text-center"
+        >
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize">title: </span>front end
+            developer
+          </p>
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize"
+              >programming language:
+            </span>
+            javaScript
+          </p>
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize"
+              >years of experience:
+            </span>
+            1+
+          </p>
+          <mat-slide-toggle></mat-slide-toggle>
+        </div>
+        <h4
+          class="text-white-50 text-capitalize text-center text-lg-start text-md-start text-sm-center"
+        >
+          billing information
+        </h4>
+        <div
+          class="box d-flex mt-4 mb-3 flex-wrap flex-wrap justify-content-lg-between justify-content-md-between justify-content-center me-lg-5 me-md-5 me-sm-5 me-0 flex-md-row flex-lg-row flex-column text-center"
+        >
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize">payment method: </span
+            >paypal
+          </p>
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize">email: </span>
+            ss@gmail.com
+          </p>
+          <p class="text-capitalize">
+            <span class="text-white-50 text-capitalize">subscribtion: </span>
+            monthly
+          </p>
+          <mat-slide-toggle></mat-slide-toggle>
+        </div>
+      </div>
+    </div>
+    <div class="row gap-3 flex-wrap flex-lg-nowrap flex-md-nowrap">
+      <div class="col-lg-4 col-md-4 col-sm-12 my-skills">
+        <div class="head mb-3">
+          <h2 class="mb-2 text-capitalize">my skills</h2>
+          <span class="text-white-50 text-capitalize">complete skill list</span>
+        </div>
+        <div class="body">
+          <mat-chip-list aria-label="skills">
+            <div class="mb-4">
+              <mat-chip class="chip" color="primary" selected>HTML5</mat-chip>
+              <mat-chip class="chip" color="primary" selected>Css3</mat-chip>
+              <mat-chip class="chip" color="primary" selected
+                >javaScript</mat-chip
+              >
+            </div>
+          </mat-chip-list>
+          <div class="mb-4">
+            <mat-chip-list aria-label="skills">
+              <mat-chip class="chip" color="accent" selected
+                >TypeScript</mat-chip
+              >
+              <mat-chip class="chip" color="accent" selected>Sass</mat-chip>
+              <mat-chip class="chip" color="accent" selected
+                >BootStrap</mat-chip
+              >
+            </mat-chip-list>
+          </div>
+          <mat-chip-list aria-label="skills">
+            <div class="mb-4">
+              <mat-chip class="chip" color="warn" selected>Angular</mat-chip>
+              <mat-chip class="chip" color="warn" selected
+                >Angular Material</mat-chip
+              >
+              <mat-chip class="chip" color="warn" selected
+                >Angular Routing</mat-chip
+              >
+            </div>
+          </mat-chip-list>
+          <div class="mb-4">
+            <mat-chip-list aria-label="skills">
+              <mat-chip class="chip" color="primary" selected
+                >Angular Guard</mat-chip
+              >
+              <mat-chip class="chip" color="accent" selected
+                >Angular Forms</mat-chip
+              >
+              <mat-chip class="chip" color="warn" selected
+                >Angular Animation</mat-chip
+              >
+            </mat-chip-list>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-12 latest-activities">
+        <div class="head mb-5">
+          <h2 class="mb-2 text-capitalize">latest activities</h2>
+          <span class="text-white-50 text-capitalize"
+            >latest activities done by the user</span
+          >
+        </div>
+        <div class="body">
+          <div
+            class="box d-flex justify-content-between mb-5 flex-lg-row flex-md-row flex-column"
+          >
+            <div
+              class="pic d-flex gap-3 align-items-center flex-lg-row flex-md-row flex-column"
+            >
+              <img
+                class="img-fluid"
+                src="assets/images/activity-01.png"
+                alt=""
+              />
+              <div class="details mb-lg-0 mb-md-0 mb-2">
+                <h5
+                  class="fs-6 text-capitalize text-lg-start text-md-start text-center"
+                >
+                  store
+                </h5>
+                <span
+                  class="fs-6 text-capitalize text-white-50 d-flex text-center event"
+                  >bought the master python course</span
+                >
+              </div>
+            </div>
+            <div class="info">
+              <h5
+                class="fs-6 text-capitalize text-lg-start text-md-start text-center"
+              >
+                18:10
+              </h5>
+              <h6
+                class="fs-6 text-capitalize text-white-50 text-lg-start text-md-start text-center event"
+              >
+                yesterday
+              </h6>
+            </div>
+          </div>
+          <div
+            class="box d-flex justify-content-between mb-5 flex-lg-row flex-md-row flex-column"
+          >
+            <div
+              class="pic d-flex gap-3 align-items-center flex-lg-row flex-md-row flex-column"
+            >
+              <img
+                class="img-fluid"
+                src="assets/images/activity-02.png"
+                alt=""
+              />
+              <div class="details mb-lg-0 mb-md-0 mb-2">
+                <h5
+                  class="fs-6 text-capitalize text-lg-start text-md-start text-center"
+                >
+                  academy
+                </h5>
+                <span
+                  class="fs-6 text-capitalize text-white-50 d-flex text-center event"
+                  >got the angular certificate</span
+                >
+              </div>
+            </div>
+            <div class="info">
+              <h5
+                class="fs-6 text-capitalize text-lg-start text-md-start text-center"
+              >
+                16:10
+              </h5>
+              <h6
+                class="fs-6 text-capitalize text-white-50 text-lg-start text-md-start text-center event"
+              >
+                yesterday
+              </h6>
+            </div>
+          </div>
+          <div
+            class="box d-flex justify-content-between mb-5 flex-lg-row flex-md-row flex-column"
+          >
+            <div
+              class="pic d-flex gap-3 align-items-center flex-lg-row flex-md-row flex-column"
+            >
+              <img
+                class="img-fluid"
+                src="assets/images/activity-03.png"
+                alt=""
+              />
+              <div class="details mb-lg-0 mb-md-0 mb-2">
+                <h5
+                  class="fs-6 text-capitalize text-lg-start text-md-start text-center"
+                >
+                  badges
+                </h5>
+                <span
+                  class="fs-6 text-capitalize text-white-50 d-flex text-center event"
+                  >unlocked the 10 skills badge</span
+                >
+              </div>
+            </div>
+            <div class="info">
+              <h5
+                class="fs-6 text-capitalize text-lg-start text-md-start text-center"
+              >
+                18:05
+              </h5>
+              <h6
+                class="fs-6 text-capitalize text-white-50 text-lg-start text-md-start text-center event"
+              >
+                yesterday
+              </h6>
+            </div>
+          </div>
+          <div
+            class="box d-flex justify-content-between mb-5 flex-lg-row flex-md-row flex-column"
+          >
+            <div
+              class="pic d-flex gap-3 align-items-center flex-lg-row flex-md-row flex-column"
+            >
+              <img
+                class="img-fluid"
+                src="assets/images/activity-01.png"
+                alt=""
+              />
+              <div class="details mb-lg-0 mb-md-0 mb-2">
+                <h5
+                  class="fs-6 text-capitalize text-lg-start text-md-start text-center"
+                >
+                  store
+                </h5>
+                <span
+                  class="fs-6 text-capitalize text-white-50 d-flex text-center event"
+                  >bought the master angular course</span
+                >
+              </div>
+            </div>
+            <div class="info">
+              <h5
+                class="fs-6 text-capitalize text-lg-start text-md-start text-center"
+              >
+                12:05
+              </h5>
+              <h6
+                class="fs-6 text-capitalize text-white-50 text-lg-start text-md-start text-center event"
+              >
+                yesterday
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

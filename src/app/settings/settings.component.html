@@ -1,0 +1,285 @@
+<div class="container-fluid">
+  <div class="title">
+    <h2>settings</h2>
+  </div>
+</div>
+<div class="settings">
+  <div class="container-fluid">
+    <div class="row gap-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12 site-control">
+        <div class="head">
+          <h2 class="mb-2 text-capitalize">site control</h2>
+          <span class="text-white-50"
+            >control the website if there is a maintenance</span
+          >
+        </div>
+        <div
+          class="body d-flex justify-content-between gap-3 align-items-center"
+        >
+          <div class="content">
+            <h3 class="mb-2">web site control</h3>
+            <span class="text-white-50"
+              >open/close website and type the reason</span
+            >
+          </div>
+          <div class="on-off">
+            <mat-slide-toggle color="warn"></mat-slide-toggle>
+          </div>
+        </div>
+        <div class="foot">
+          <mat-form-field color="warn" class="close-msg" appearance="outline">
+            <mat-label class="label">close msg content</mat-label>
+            <textarea
+              class="textarea"
+              matInput
+              placeholder="your thoughts"
+            ></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 general-info">
+        <div class="head">
+          <h2>general info</h2>
+          <span class="text-white-50"
+            >general information about your account</span
+          >
+        </div>
+        <div class="body">
+          <form class="d-flex flex-column" [formGroup]="change">
+            <!-- fname field -->
+            <mat-form-field
+              class="example-full-width"
+              color="warn"
+              appearance="outline"
+            >
+              <mat-label class="text-capitalize">first name</mat-label>
+              <input
+                formControlName="fname"
+                class="text-capitalize"
+                matInput
+                placeholder="first name"
+              />
+            </mat-form-field>
+            <!-- lname field -->
+            <mat-form-field
+              class="example-full-width"
+              color="warn"
+              appearance="outline"
+            >
+              <mat-label class="text-capitalize">last name</mat-label>
+              <input
+                class="text-capitalize"
+                matInput
+                placeholder="last name"
+                formControlName="lname"
+              />
+            </mat-form-field>
+            <!-- email field -->
+            <div
+              class="change-email d-flex flex-column align-items-center justify-content-between"
+            >
+              <mat-form-field
+                class="example-full-width emailfield"
+                color="warn"
+                appearance="outline"
+              >
+                <mat-label>Email</mat-label>
+                <input
+                  formControlName="mail"
+                  type="email"
+                  matInput
+                  placeholder="@ex.example.com"
+                  [value]="email"
+                />
+              </mat-form-field>
+              <button
+                class="change"
+                style="background-color: var(--bs-orange); color: white"
+                mat-raised-button
+                color="accent"
+              >
+                Change
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 security-info">
+        <div class="head">
+          <h2>security info</h2>
+          <span class="text-white-50"
+            >security information about your account</span
+          >
+        </div>
+        <div
+          class="body d-flex justify-content-between gap-3 align-items-center"
+        >
+          <div class="content">
+            <h3 class="mb-2">password</h3>
+            <span class="text-white-50">last change on 25/5/2021</span>
+          </div>
+          <div>
+            <button
+              class="change"
+              style="background-color: var(--bs-orange); color: white"
+              mat-raised-button
+              color="accent"
+            >
+              Change
+            </button>
+          </div>
+        </div>
+        <div class="foot">
+          <div
+            class="body d-flex justify-content-between gap-3 align-items-center"
+          >
+            <div class="content">
+              <h3 class="mb-2">two-factor authentication</h3>
+              <span class="text-white-50">enable/disable this feature </span>
+            </div>
+            <div class="on-off">
+              <mat-slide-toggle color="warn"></mat-slide-toggle>
+            </div>
+          </div>
+        </div>
+        <div
+          class="end d-flex justify-content-between gap-3 align-items-center"
+        >
+          <div class="content">
+            <h3 class="mb-2">Devices</h3>
+            <span class="text-white-50">check the login devices list</span>
+          </div>
+          <div class="on-off">
+            <button
+              style="background-color: var(--bs-orange); color: white"
+              mat-raised-button
+              color="warn"
+            >
+              Devices
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row gap-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12 social-info">
+        <div class="head mb-3">
+          <h2>social media</h2>
+          <span class="text-white-50">social media information</span>
+        </div>
+        <div class="body">
+          <div class="box d-flex align-items-center mb-3">
+            <i class="bi bi-twitter fs-3 p-1 text-white-50"></i>
+            <input type="text" />
+          </div>
+          <div class="box d-flex align-items-center mb-3">
+            <i class="bi bi-facebook fs-3 p-1 text-white-50"></i>
+            <input type="text" />
+          </div>
+          <div class="box d-flex align-items-center mb-3">
+            <i class="bi bi-youtube fs-3 p-1 text-white-50"></i>
+            <input type="text" />
+          </div>
+          <div class="box d-flex align-items-center mb-3">
+            <i class="bi bi-linkedin fs-3 p-1 text-white-50"></i>
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 widgets-control">
+        <div class="head mb-3">
+          <h2>widget control</h2>
+          <span class="text-white-50">show/hide widgets</span>
+        </div>
+        <div class="body d-flex flex-column">
+          <mat-checkbox
+            color="warn"
+            [checked]="quickDraft"
+            class="fs-5 mb-3 quick"
+            >quickdraft</mat-checkbox
+          >
+          <mat-checkbox
+            color="warn"
+            [checked]="yearlyTargets"
+            class="fs-5 mb-3 yearly"
+            >yearlytargets</mat-checkbox
+          >
+          <mat-checkbox
+            color="warn"
+            [checked]="ticketsStatistics"
+            class="fs-5 mb-3 tickets"
+            >tickets statistics</mat-checkbox
+          >
+          <mat-checkbox
+            color="warn"
+            [checked]="latestNews"
+            class="fs-5 mb-3 latestnews"
+            >latest news</mat-checkbox
+          >
+          <mat-checkbox
+            color="warn"
+            [checked]="latestTasks"
+            class="fs-5 mb-3 latesttasks"
+            >latest tasks</mat-checkbox
+          >
+          <mat-checkbox
+            color="warn"
+            [checked]="topSearch"
+            class="fs-5 mb-3 topsearch"
+            >top search items</mat-checkbox
+          >
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 backup-manager">
+        <div class="head mb-3">
+          <h2>backup manager</h2>
+          <span class="text-white-50">control backup time and location</span>
+        </div>
+        <div class="body d-flex flex-column">
+          <mat-radio-group
+            style="display: flex; flex-direction: column"
+            aria-label="Select an option d-flex flex-column"
+          >
+            <mat-radio-button color="warn" class="mb-3 fs-5 radio" value="1"
+              >Daily</mat-radio-button
+            >
+            <mat-radio-button color="warn" class="mb-3 fs-5 radio" value="2"
+              >Weekly</mat-radio-button
+            >
+            <mat-radio-button color="warn" class="mb-3 fs-5 radio" value="3"
+              >Monthly</mat-radio-button
+            >
+          </mat-radio-group>
+        </div>
+        <div
+          class="foot d-flex d-flex justify-content-around align-items-center mb-4 ms-2 me-2 gap-2"
+        >
+          <div
+            [ngClass]="active1 ? actclass : ''"
+            (click)="activeDrive1()"
+            class="megabox p-2 d-flex flex-column justify-content-center align-items-center ms-1"
+          >
+            <i class="bi bi-hdd-stack-fill mb-2 fs-5"></i>
+            <span class="fs-5 text-capitalize">megaman</span>
+          </div>
+          <div
+            [ngClass]="active2 ? actclass : ''"
+            (click)="activeDrive2()"
+            class="bubblebox p-2 d-flex flex-column justify-content-center align-items-center"
+          >
+            <i class="bi bi-hdd-stack-fill mb-2 fs-5"></i>
+            <span class="fs-5 text-capitalize">bubbleman</span>
+          </div>
+          <div
+            [ngClass]="active3 ? actclass : ''"
+            (click)="activeDrive3()"
+            class="junkbox p-2 d-flex flex-column justify-content-center align-items-center"
+          >
+            <i class="bi bi-hdd-stack-fill mb-2 fs-5"></i>
+            <span class="fs-5 text-capitalize">junkman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

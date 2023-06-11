@@ -1,0 +1,718 @@
+<div class="container-fluid">
+  <div class="title">
+    <h2>dashboard</h2>
+  </div>
+</div>
+<div class="dashboard">
+  <div class="container-fluid">
+    <div class="row gap-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12 welcome">
+        <div class="head d-flex justify-content-between">
+          <div class="info">
+            <h2>welcome</h2>
+            <span class="text-white-50 text-capitalize fs-6">{{
+              usernameprofile
+            }}</span>
+          </div>
+          <div class="infopic">
+            <img class="img-fluid" src="assets/images/welcome.png" alt="" />
+          </div>
+          <img class="img-fluid prof" src="assets/images/avatar.png" alt="" />
+        </div>
+        <div class="body d-flex justify-content-between">
+          <div class="box">
+            <h2>sameh soliman</h2>
+            <span class="text-white-50">developer</span>
+          </div>
+          <div class="box">
+            <h2>80</h2>
+            <span class="text-white-50">projects</span>
+          </div>
+          <div class="box">
+            <h2>$8500</h2>
+            <span class="text-white-50">earned</span>
+          </div>
+        </div>
+        <div class="foot">
+          <button
+            style="background-color: var(--bs-orange)"
+            routerLink="/profile"
+            mat-raised-button
+            color="primary"
+          >
+            profile
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 quickdraft">
+        <div class="head">
+          <div class="info">
+            <h2>quick draft</h2>
+            <span class="text-white-50">write a draft for your ideas</span>
+          </div>
+        </div>
+        <div class="body">
+          <form class="d-flex flex-column" [formGroup]="draftForm">
+            <mat-form-field
+              color="warn"
+              class="titleinput"
+              appearance="outline"
+            >
+              <mat-label class="label">title</mat-label>
+              <input
+                class="mytitle"
+                matInput
+                placeholder="title"
+                formControlName="yourTitle"
+              />
+            </mat-form-field>
+            <mat-form-field
+              color="warn"
+              class="thoughtsinput"
+              appearance="outline"
+            >
+              <mat-label class="label">Leave a comment</mat-label>
+              <textarea
+                formControlName="yourThoughts"
+                class="textarea"
+                matInput
+                placeholder="your thoughts"
+              ></textarea>
+            </mat-form-field>
+            <div class="foot d-flex justify-content-between flex-row-reverse">
+              <button
+                (click)="draftSubmit()"
+                type="submit"
+                style="background-color: var(--bs-orange)"
+                mat-raised-button
+                color="primary"
+              >
+                save
+              </button>
+              <button
+                routerLink="/drafts"
+                style="background-color: var(--bs-orange)"
+                mat-raised-button
+                color="primary"
+              >
+                Drafts
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 yearlytargets">
+        <div class="head">
+          <h2>yearly target</h2>
+          <span class="text-white-50">targets of the year</span>
+        </div>
+        <div class="body d-flex gap-4">
+          <div class="icons d-flex flex-column">
+            <mat-icon
+              class="money mb-2 d-flex justify-content-center align-items-center"
+            >
+              attach_money</mat-icon
+            >
+            <mat-icon
+              class="code mb-2 d-flex justify-content-center align-items-center"
+              >code</mat-icon
+            >
+            <mat-icon
+              class="account mb-2 d-flex justify-content-center align-items-center"
+              >account_circle</mat-icon
+            >
+          </div>
+          <div class="data">
+            <div class="box mt-4 d-flex gap-1 flex-column">
+              <span class="text-white-50 text-capitalize">money</span>
+              <p class="fw-bold fs-6">$20.000</p>
+              <mat-progress-bar
+                class="prog-bar"
+                color="accent"
+                mode="determinate"
+                value="80"
+              ></mat-progress-bar>
+            </div>
+            <div class="box2 mt-5 d-flex gap-1 flex-column">
+              <span class="text-white-50 text-capitalize">projects</span>
+              <p class="fw-bold fs-6">24</p>
+              <mat-progress-bar
+                class="prog-bar"
+                color="accent"
+                mode="determinate"
+                value="55"
+              ></mat-progress-bar>
+            </div>
+            <div class="box d-flex gap-1 flex-column">
+              <span class="text-white-50 text-capitalize">team</span>
+              <p class="fw-bold fs-6">12</p>
+              <mat-progress-bar
+                class="prog-bar"
+                color="accent"
+                mode="determinate"
+                value="75"
+              ></mat-progress-bar>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row gap-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12 tickets">
+        <div class="head mb-4 mt-3">
+          <h2>tickets statistics</h2>
+          <span class="text-white-50">everything about support tickets</span>
+        </div>
+        <div
+          class="body d-flex justify-content-center gap-4 mb-5 flex-lg-row flex-md-row flex-column align-items-center"
+        >
+          <div class="box d-flex flex-column gap-4">
+            <div
+              class="cont text-center gap-2 p-1 d-flex flex-column justify-content-center align-items-center"
+            >
+              <mat-icon class="list">view_list</mat-icon>
+              <p>2500</p>
+              <span class="text-white-50 fs-6">total</span>
+            </div>
+            <div
+              class="cont text-center gap-2 p-1 d-flex flex-column justify-content-center align-items-center"
+            >
+              <mat-icon class="donut">donut_large</mat-icon>
+              <p>500</p>
+              <span class="text-white-50 fs-6">pending</span>
+            </div>
+          </div>
+          <div class="box d-flex flex-column gap-4">
+            <div
+              class="cont text-center gap-2 p-1 d-flex flex-column justify-content-center align-items-center"
+            >
+              <mat-icon class="check">check_circle_outline</mat-icon>
+              <p>1900</p>
+              <span class="text-white-50 fs-6">closed</span>
+            </div>
+            <div
+              class="cont text-center gap-2 p-1 d-flex flex-column justify-content-center align-items-center"
+            >
+              <mat-icon class="cancel"> cancel_presentation</mat-icon>
+              <p>100</p>
+              <span class="text-white-50 fs-6">deleted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 latest-news">
+        <div class="head mt-3 mb-4">
+          <h2>latest news</h2>
+        </div>
+        <div class="body">
+          <div
+            class="box flex-lg-row flex-md-row flex-column mb-4 d-flex justify-content-between align-items-center gap-4 text-center text-capitalize"
+          >
+            <img class="img-fluid" src="assets/images/news-01.png" alt="" />
+            <div class="content">
+              <h3 class="m-0">created SASS section</h3>
+              <span class="text-white-50 side"
+                >new SASS examples & tutorials</span
+              >
+            </div>
+            <span class="days">3 days ago</span>
+          </div>
+          <div
+            class="box flex-lg-row flex-md-row flex-column mb-4 d-flex justify-content-between align-items-center gap-4 text-center text-capitalize"
+          >
+            <img class="img-fluid" src="assets/images/news-02.png" alt="" />
+            <div class="content">
+              <h3 class="m-0">changed the design</h3>
+              <span class="text-white-50 side">a brand new website design</span>
+            </div>
+            <span class="days">5 days ago</span>
+          </div>
+          <div
+            class="box flex-lg-row flex-md-row flex-column mb-4 d-flex justify-content-between align-items-center gap-4 text-center text-capitalize"
+          >
+            <img class="img-fluid" src="assets/images/news-03.png" alt="" />
+            <div class="content">
+              <h3 class="m-0">team increased</h3>
+              <span class="text-white-50 side"
+                >3 developers joined the team</span
+              >
+            </div>
+            <span class="days">7 days ago</span>
+          </div>
+          <div
+            class="box flex-lg-row flex-md-row flex-column mb-4 d-flex justify-content-between align-items-center gap-4 text-center text-capitalize"
+          >
+            <img class="img-fluid" src="assets/images/news-04.png" alt="" />
+            <div class="content">
+              <h3 class="m-0">added payment gateaway</h3>
+              <span class="text-white-50 side"
+                >many new payment gateways added</span
+              >
+            </div>
+            <span class="days">9 days ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 latest-tasks">
+        <div class="head mt-3 mb-4">
+          <h2>latest tasks</h2>
+        </div>
+        <div class="body mb-4">
+          <div
+            class="box d-flex justify-content-between align-items-center mb-3"
+          >
+            <div class="content text-capitalize">
+              <h3 [ngClass]="deleteClass1" class="m-0 fw-bold">
+                record one new video
+              </h3>
+              <span [ngClass]="deleteClass1" class="text-white-50 fs-6"
+                >record python create exe project</span
+              >
+            </div>
+            <div class="icon">
+              <mat-icon [ngClass]="deleteStyle1" (click)="deleteTask1()"
+                >delete</mat-icon
+              >
+            </div>
+          </div>
+          <div
+            class="box d-flex justify-content-between align-items-center mb-3"
+          >
+            <div class="content text-capitalize">
+              <h3 [ngClass]="deleteClass2" class="m-0 fw-bold">
+                write article
+              </h3>
+              <span [ngClass]="deleteClass2" class="text-white-50 fs-6"
+                >write low level vs high level language</span
+              >
+            </div>
+            <div class="icon">
+              <mat-icon [ngClass]="deleteStyle2" (click)="deleteTask2()"
+                >delete</mat-icon
+              >
+            </div>
+          </div>
+          <div
+            class="box d-flex justify-content-between align-items-center mb-3"
+          >
+            <div class="content text-capitalize">
+              <h3 [ngClass]="deleteClass3" class="m-0 fw-bold">
+                finish project
+              </h3>
+              <span [ngClass]="deleteClass3" class="text-white-50 fs-6"
+                >publish academy programming project</span
+              >
+            </div>
+            <div class="icon">
+              <mat-icon [ngClass]="deleteStyle3" (click)="deleteTask3()"
+                >delete</mat-icon
+              >
+            </div>
+          </div>
+          <div
+            class="box d-flex justify-content-between align-items-center mb-3"
+          >
+            <div class="content text-capitalize">
+              <h3 [ngClass]="deleteClass4" class="m-0 fw-bold">
+                attend the meeting
+              </h3>
+              <span [ngClass]="deleteClass4" class="text-white-50 fs-6"
+                >atten the project business meeting</span
+              >
+            </div>
+            <div class="icon">
+              <mat-icon [ngClass]="deleteStyle4" (click)="deleteTask4()"
+                >delete</mat-icon
+              >
+            </div>
+          </div>
+          <div
+            class="box d-flex justify-content-between align-items-center mb-3"
+          >
+            <div class="content text-capitalize">
+              <h3 [ngClass]="deleteClass5" class="m-0 fw-bold">
+                finish the lesson
+              </h3>
+              <span [ngClass]="deleteClass5" class="text-white-50 fs-6"
+                >finish teaching flex box</span
+              >
+            </div>
+            <div class="icon">
+              <mat-icon [ngClass]="deleteStyle5" (click)="deleteTask5()"
+                >delete</mat-icon
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row gap-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12 top-search">
+        <div class="head pb-0 bt-1 mt-3">
+          <h2 class="text-capitalize">top search items</h2>
+          <div class="headtitle d-flex justify-content-between gap-2 mb-3">
+            <span class="text-white-50 text-capitalize">keyword</span>
+            <span class="text-white-50 text-capitalize">search count</span>
+          </div>
+        </div>
+        <div class="body d-flex justify-content-between gap-2">
+          <div class="box">
+            <p class="text-capitalize fs-6 mb-4">programming</p>
+            <p class="text-capitalize fs-6 mb-4">javascript</p>
+            <p class="text-capitalize fs-6 mb-4">php</p>
+            <p class="text-capitalize fs-6 mb-4">code</p>
+            <p class="text-capitalize fs-6 mb-4">design</p>
+            <p class="text-capitalize fs-6 mb-4">logic</p>
+          </div>
+          <div class="box2 text-center">
+            <p class="text-capitalize fs-6 mb-4">220</p>
+            <p class="text-capitalize fs-6 mb-4">180</p>
+            <p class="text-capitalize fs-6 mb-4">160</p>
+            <p class="text-capitalize fs-6 mb-4">145</p>
+            <p class="text-capitalize fs-6 mb-4">110</p>
+            <p class="text-capitalize fs-6 mb-4">95</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 latest-uploads">
+        <div class="head bt-1 mt-3">
+          <h2 class="text-capitalize">latest upload</h2>
+        </div>
+        <div class="body">
+          <div
+            class="box d-flex justify-content-between align-items-center mb-3"
+          >
+            <div class="d-flex gap-4">
+              <img class="img-fluid" src="assets/images/pdf.svg" alt="" />
+              <div
+                class="content d-flex flex-column text-start text-capitalize"
+              >
+                <h4 class="m-0">my-file.pdf</h4>
+                <span class="text-white-50">sameh</span>
+              </div>
+            </div>
+            <div class="size"><span>2.9mb</span></div>
+          </div>
+          <div
+            class="box d-flex justify-content-between align-items-center mb-3"
+          >
+            <div class="d-flex gap-4">
+              <img class="img-fluid" src="assets/images/avi.svg" alt="" />
+              <div
+                class="content d-flex flex-column text-start text-capitalize"
+              >
+                <h4 class="m-0">my-vide-file.avi</h4>
+                <span class="text-white-50">admin</span>
+              </div>
+            </div>
+            <div class="size"><span>4.9mb</span></div>
+          </div>
+          <div
+            class="box d-flex justify-content-between align-items-center mb-3"
+          >
+            <div class="d-flex gap-4">
+              <img class="img-fluid" src="assets/images/psd.svg" alt="" />
+              <div
+                class="content d-flex flex-column text-start text-capitalize"
+              >
+                <h4 class="m-0">my-psd-file.pdf</h4>
+                <span class="text-white-50">ma7y</span>
+              </div>
+            </div>
+            <div class="size"><span>4.5mb</span></div>
+          </div>
+          <div
+            class="box d-flex justify-content-between align-items-center mb-3"
+          >
+            <div class="d-flex gap-4">
+              <img class="img-fluid" src="assets/images/zip.svg" alt="" />
+              <div
+                class="content d-flex flex-column text-start text-capitalize"
+              >
+                <h4 class="m-0">my-zip-file.pdf</h4>
+                <span class="text-white-50">user</span>
+              </div>
+            </div>
+            <div class="size"><span>8.9mb</span></div>
+          </div>
+          <div
+            class="box d-flex justify-content-between align-items-center mb-3"
+          >
+            <div class="d-flex gap-4">
+              <img class="img-fluid" src="assets/images/dll.svg" alt="" />
+              <div
+                class="content d-flex flex-column text-start text-capitalize"
+              >
+                <h4 class="m-0">my-DLL.pdf</h4>
+                <span class="text-white-50">admin</span>
+              </div>
+            </div>
+            <div class="size"><span>7.9mb</span></div>
+          </div>
+          <div
+            class="box d-flex justify-content-between align-items-center mb-3"
+          >
+            <div class="d-flex gap-4">
+              <img class="img-fluid" src="assets/images/eps.svg" alt="" />
+              <div
+                class="content d-flex flex-column text-start text-capitalize"
+              >
+                <h4 class="m-0">my-esp-file.pdf</h4>
+                <span class="text-white-50">designer</span>
+              </div>
+            </div>
+            <div class="size"><span>8.9mb</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 last-project">
+        <div class="head bt-1 mt-3">
+          <h2 class="text-capitalize">last project progress</h2>
+        </div>
+        <div class="body">
+          <div class="box">
+            <span class="circle"></span>
+            <p class="text-capitalize fs-6 mb-4">got the project</p>
+          </div>
+          <div class="box">
+            <span class="circle"></span>
+            <p class="text-capitalize fs-6 mb-4">started the project</p>
+          </div>
+          <div class="box">
+            <span class="circle"></span>
+            <p class="text-capitalize fs-6 mb-4">
+              the project is about to finish
+            </p>
+          </div>
+          <div class="box">
+            <span class="circle"></span>
+            <p class="text-capitalize fs-6 mb-4">test the project</p>
+          </div>
+          <div class="box">
+            <span class="circle"></span>
+            <p class="text-capitalize fs-6 mb-4">
+              finish the project & get the money
+            </p>
+          </div>
+        </div>
+        <div class="foot text-end">
+          <img src="assets/images/project.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="row gap-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12 reminders">
+        <div class="head">
+          <h2 class="text-capitalize">reminders</h2>
+        </div>
+        <div class="body">
+          <div class="box d-flex align-items-center mb-4">
+            <span class="blue-circle"></span>
+            <div class="content ms-5">
+              <h3 class="mb-3">check my tasks list</h3>
+              <span class="text-white-50">28/9/2022 - 12:00am</span>
+            </div>
+          </div>
+          <div class="box d-flex align-items-center mb-4">
+            <span class="green-circle"></span>
+            <div class="content ms-5">
+              <h3 class="mb-3">check my projects</h3>
+              <span class="text-white-50">26/10/2022 - 12:00am</span>
+            </div>
+          </div>
+          <div class="box d-flex align-items-center mb-4">
+            <span class="orange-circle"></span>
+            <div class="content ms-5">
+              <h3 class="mb-3">call all my clients</h3>
+              <span class="text-white-50">25/5/2022 - 12:00am</span>
+            </div>
+          </div>
+          <div class="box d-flex align-items-center mb-4">
+            <span class="red-circle"></span>
+            <div class="content ms-5">
+              <h3 class="mb-3">finish the development workshop</h3>
+              <span class="text-white-50">4/10/2022 - 12:00am</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 latest-post">
+        <div class="head-post">
+          <div class="title-post mb-5">
+            <h2>latest posts</h2>
+          </div>
+          <div class="content d-flex align-items-center gap-3 text-capitalize">
+            <img class="img-fluid" src="assets/images/avatar.png" alt="" />
+            <div class="info">
+              <h4 class="m-0 fs-6">{{ usernameprofile }}</h4>
+              <span class="text-white-50 fs-5">about 5 hrs ago</span>
+            </div>
+          </div>
+        </div>
+        <div class="body">
+          <p class="fs-6 text-capitalize mb-5">
+            Wake up to Reality, Nothing ever goes as planned in this Accursed
+            World The longer You live the more you will realize That the Only
+            things that Truly Exist in this Reality Are merely Pain, Suffering
+            and Futility
+          </p>
+        </div>
+        <div class="foot d-flex justify-content-between fs-6">
+          <div class="box text-white-50">
+            <i class="bi bi-heart me-2"></i>
+            <span>2.5k</span>
+          </div>
+          <div class="box text-white-50">
+            <i class="bi bi-chat-dots me-2"></i>
+            <span>630</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 social-media">
+        <div class="head">
+          <h2>social media stats</h2>
+        </div>
+        <div class="body">
+          <div
+            class="box-twitter mb-4 d-flex justify-content-between align-items-center"
+          >
+            <div class="content d-flex align-items-center">
+              <i class="bi bi-twitter p-2 fs-1 me-3"></i>
+              <span>90k followers</span>
+            </div>
+            <button class="tweetbtn me-2" mat-button color="primary">
+              follow
+            </button>
+          </div>
+          <div
+            class="box-facebook mb-4 d-flex justify-content-between align-items-center"
+          >
+            <div class="content d-flex align-items-center">
+              <i class="bi bi-facebook p-2 fs-1 me-3"></i>
+              <span>3m likes</span>
+            </div>
+            <button class="facebtn me-2" mat-button color="primary">
+              like
+            </button>
+          </div>
+          <div
+            class="box-youtube mb-4 d-flex justify-content-between align-items-center"
+          >
+            <div class="content d-flex align-items-center">
+              <i class="bi bi-youtube p-2 fs-1 me-3"></i>
+              <span>1m subscibers</span>
+            </div>
+            <button class="youtubebtn me-2" mat-button color="accent">
+              subscribe
+            </button>
+          </div>
+          <div
+            class="box-linked mb-4 d-flex justify-content-between align-items-center"
+          >
+            <div class="content d-flex align-items-center">
+              <i class="bi bi-linkedin p-2 fs-1 me-3"></i>
+              <span>70k followers</span>
+            </div>
+            <button class="linkedbtn me-2" mat-button color="accent">
+              follow
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-12 col-md-12 col-sm-12 mytable">
+        <section class="example-container mat-elevation-z8" tabindex="0">
+          <mat-table [dataSource]="dataSource" *ngFor="let table of tables">
+            <ng-container matColumnDef="name">
+              <mat-header-cell class="fs-5" *matHeaderCellDef>
+                Name
+              </mat-header-cell>
+              <mat-cell *matCellDef="let element">
+                {{ element.name }}
+              </mat-cell>
+              <mat-footer-cell class="fs-5" *matFooterCellDef>
+                Name Footer
+              </mat-footer-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="finsihdate">
+              <mat-header-cell class="fs-5" *matHeaderCellDef>
+                Finsih Data
+              </mat-header-cell>
+              <mat-cell *matCellDef="let element">
+                {{ element.finsihdate }}
+              </mat-cell>
+              <mat-footer-cell class="fs-5" *matFooterCellDef>
+                Finsih Data Footer
+              </mat-footer-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="client">
+              <mat-header-cell class="fs-5" *matHeaderCellDef>
+                client
+              </mat-header-cell>
+              <mat-cell *matCellDef="let element">
+                {{ element.client }}
+              </mat-cell>
+              <mat-footer-cell class="fs-5" *matFooterCellDef>
+                client Footer
+              </mat-footer-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="price">
+              <mat-header-cell class="fs-5" *matHeaderCellDef>
+                price
+              </mat-header-cell>
+              <mat-cell *matCellDef="let element">
+                {{ element.price }}
+              </mat-cell>
+              <mat-footer-cell class="fs-5" *matFooterCellDef>
+                price Footer
+              </mat-footer-cell>
+            </ng-container>
+            <ng-container matColumnDef="team">
+              <mat-header-cell class="fs-5" *matHeaderCellDef>
+                team
+              </mat-header-cell>
+              <mat-cell class="d-flex" *matCellDef="let element">
+                <img src="{{ element.team[0] }}" alt="" />
+                <img src="{{ element.team[1] }}" alt="" />
+                <img src="{{ element.team[2] }}" alt="" />
+                <img src="{{ element.team[3] }}" alt="" />
+                <img src="{{ element.team[4] }}" alt="" />
+              </mat-cell>
+              <mat-footer-cell class="fs-5" *matFooterCellDef>
+                team Footer
+              </mat-footer-cell>
+            </ng-container>
+            <ng-container matColumnDef="status">
+              <mat-header-cell class="fs-5" *matHeaderCellDef>
+                status
+              </mat-header-cell>
+              <mat-cell *matCellDef="let element">
+                <div>
+                  <button
+                    name="{{ element.status }}"
+                    id="sts"
+                    mat-raised-button
+                    class="mystatusbtn btn"
+                  >
+                    {{ element.status }}
+                  </button>
+                </div>
+              </mat-cell>
+              <mat-footer-cell class="fs-5" *matFooterCellDef>
+                status Footer
+              </mat-footer-cell>
+            </ng-container>
+            <mat-header-row
+              *matHeaderRowDef="displayedColumns"
+            ></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+          </mat-table>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

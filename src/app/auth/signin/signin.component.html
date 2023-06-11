@@ -1,0 +1,75 @@
+<div class="signin d-flex justify-content-center align-items-center">
+  <mat-card class="myform">
+    <mat-card-header
+      class="head d-flex justify-content-center mb-4 text-capitalize mt-3 align-items-center"
+    >
+      <mat-card-title class="fs-4 fw-bold">Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="body">
+      <!-- reg-form -->
+      <form class="d-flex flex-column" [formGroup]="log">
+        <!-- username field -->
+        <mat-form-field class="username" color="accent" appearance="legacy">
+          <mat-label>username</mat-label>
+          <input matInput formControlName="username" />
+        </mat-form-field>
+        <!-- password field -->
+        <mat-form-field class="password" color="accent" appearance="outline">
+          <mat-label>Enter your password</mat-label>
+          <input
+            matInput
+            [type]="hide ? 'password' : 'text'"
+            formControlName="password"
+          />
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="hide = !hide"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide"
+          >
+            <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+          </button>
+        </mat-form-field>
+        <!-- email field -->
+        <div
+          class="errorsmsg d-flex flex-column text-capitalize fs-6 mb-4 mt-3"
+        >
+          <span [ngClass]="userstyle" class="usererror mb-1">{{
+            usererror
+          }}</span>
+          <span [ngClass]="passstyle" class="passerror mb-1">{{
+            passerror
+          }}</span>
+        </div>
+        <!-- register button -->
+        <mat-card-actions>
+          <button
+            (click)="login()"
+            class="loginbtn"
+            [disabled]="!log.valid"
+            type="submit"
+            mat-raised-button
+            color="accent"
+          >
+            login
+          </button>
+        </mat-card-actions>
+      </form>
+    </mat-card-content>
+    <mat-card-actions
+      class="foot d-flex flex-column justify-content-center mb-3 fs-4 text-capitalize align-items-center"
+    >
+      register a new account
+      <button
+        class="signinbtn fs-5 mt-3"
+        routerLink="/register"
+        mat-raised-button
+        color="warn"
+      >
+        register
+      </button>
+    </mat-card-actions>
+    <mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
+  </mat-card>
+</div>
